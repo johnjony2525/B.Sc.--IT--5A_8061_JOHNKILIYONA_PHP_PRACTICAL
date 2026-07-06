@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+// Original variable
+$value = "123.45";
+
+echo "Original Value: " . $value . "<br>";
+echo "Original Type: " . gettype($value) . "<br><br>";
+
+// Convert to Integer
+settype($value, "integer");
+echo "After settype() to Integer:<br>";
+echo "Value: " . $value . "<br>";
+echo "Type: " . gettype($value) . "<br><br>";
+
+// Convert to Double (Float)
+settype($value, "double");
+echo "After settype() to Double:<br>";
+echo "Value: " . $value . "<br>";
+echo "Type: " . gettype($value) . "<br><br>";
+
+// Convert to String
+settype($value, "string");
+echo "After settype() to String:<br>";
+echo "Value: " . $value . "<br>";
+echo "Type: " . gettype($value) . "<br><br>";
+
+// Convert to Boolean
+settype($value, "boolean");
+echo "After settype() to Boolean:<br>";
+echo "Value: " . $value . "<br>";
+echo "Type: " . gettype($value) . "<br>";
+?>
+</body>
+</html>
