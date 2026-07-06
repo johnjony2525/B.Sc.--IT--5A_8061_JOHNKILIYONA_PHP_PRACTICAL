@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        //1-array_change_key_case()
+        echo "<h3>1-array_change_key_case()</h3>";
+        $array = array("Name" => "John", "AGE" => 30, "CITY" => "New York");
+        print_r(array_change_key_case($array, CASE_LOWER));
+         
+        //2-array_chunk()
+         echo "<hr><h3>2-array_chunk()</h3>";
+         $months = array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+         print_r(array_chunk($months, 3,"<br>"));
+         
+         //3-array_count_values()
+         echo "<hr><h3>3-array_count_values()</h3>";
+         $colors = array("Red", "Blue", "Red", "Green", "Blue", "Red");
+         print_r(array_count_values($colors));
+         
+         //4-array_shift()
+         echo "<hr><h3>4-array_shift()</h3>";
+            $fruits = array("Apple", "Banana", "Orange");
+            $firstFruit = array_shift($fruits);
+            echo "First fruit: " . $firstFruit . "<br>";
+            echo "Remaining fruits: ";
+            print_r($fruits);
+
+         //5-array_unshift()
+         echo "<hr><h3>5-array_unshift()</h3>";
+            $fruits = array("Apple", "Banana", "Orange");
+            array_unshift($fruits, "Mango", "Grapes");
+            echo "Updated fruits: ";
+            print_r($fruits);
+            
+         //6-array_pop()
+         echo "<hr><h3>6-array_pop()</h3>";
+            $fruits = array("Apple", "Banana", "Orange");
+            $lastFruit = array_pop($fruits);
+            echo "Last fruit: " . $lastFruit . "<br>";
+            echo "Remaining fruits: ";
+            print_r($fruits);
+            
+          //7-array_push()
+          echo "<hr><h3>7-array_push()</h3>";
+            $fruits = array("Apple", "Banana", "Orange");
+            array_push($fruits, "Mango", "Grapes");
+            echo "Updated fruits: ";
+            print_r($fruits);
+            
+          //8-array_combine()
+          echo "<hr><h3>8-array_combine()</h3>";
+            $keys = array("a", "b", "c");
+            $values = array(1, 2, 3);
+            $combinedArray = array_combine($keys, $values);
+            print_r($combinedArray);      
+
+    ?>
+</body>
+</html>
