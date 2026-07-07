@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion in PHP</title>
+</head>
+<body>
+<?php
+
+        $var = "12345";
+        echo "<br>Original Value: " . $var . "<br>";
+        echo "<br>Original Type: </br>" . gettype($var) . "<br><br>";
+
+        // Convert to Integer
+        settype($var, "integer");
+        echo "<br>Converted Value: " . $var . "<br>";
+        echo "<br>Converted Type: </br>" . gettype($var) . "<br><br>";  
+
+        // Convert to Double (Float)
+        settype($var, "double");
+        echo "<br>Converted Value: " . $var . "<br>";
+        echo "<br>Converted Type: </br>" . gettype($var) . "<br><br>";
+
+        // Convert to String
+        settype($var, "string");
+        echo "<br>Converted Value: " . $var . "<br>";
+        echo "<br>Converted Type: </br>" . gettype($var) . "<br><br>";
+
+        // Convert to Boolean
+        settype($var, "boolean");   
+        echo "<br>Converted Value: " . $var . "<br>";
+        echo "<br>Converted Type: </br>" . gettype($var) . "<br><br>";      
+
+
+?>  
+</body>
+</html>
