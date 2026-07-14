@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $Servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "studentdb";
+
+    //$conn = new msqli($servername, $username, $password, $database);
+     $conn = new msqli("localhost", "root", " ", "studentdb");
+
+     /*if ($conn){
+        echo "Database Connected Succefully.";
+
+     }
+     else{
+        die("Connection Fail" . $conn->Connect_error());
+     }*/
+
+     if (!conn){
+
+        die("Connetion FAil:" . msqli_connet_error());
+     }
+       
+       
+     ?>
+</body>
+</html>
